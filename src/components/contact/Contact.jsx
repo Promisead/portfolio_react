@@ -7,10 +7,14 @@ import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
   const form = useRef();
+  const handleClick = (e) => {
+    alert('Message Sent!');
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
-    e.target.reset();
+    //  form.current.reset(e);
+    // e.target.reset();
 
     emailjs
       .sendForm(
@@ -77,18 +81,27 @@ export const Contact = () => {
         <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
-            name="name"
+            name="user_name"
             placeholder="Your Full Name"
             required
           />
-          <input type="email" name="email" placeholder="Your Email" required />
+          <input
+            type="email"
+            name="user_email"
+            placeholder="Your Email"
+            required
+          />
           <textarea
             name="message"
             rows="7"
             placeholder="Leave a message"
             required
           ></textarea>
-          <button type="submit" className="btn btn-primary">
+          <button
+            type="submit"
+            className="btn btn-primary"
+            onClick={() => handleClick()}
+          >
             Send Message
           </button>
         </form>
