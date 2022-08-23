@@ -14,10 +14,10 @@ export const Contact = () => {
 
     emailjs
       .sendForm(
-        process.env.SERVICE_ID,
-        process.env.TEMPLATE_ID,
+        'service_xwxc4ui',
+        'template_y2deibh',
         form.current,
-        process.env.PUBLIC_API
+        's5XWvVJMHRbTuB8Em'
       )
       .then(
         (result) => {
