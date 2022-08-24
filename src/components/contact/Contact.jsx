@@ -5,14 +5,15 @@ import { RiMessengerLine } from 'react-icons/ri';
 import { BsWhatsapp } from 'react-icons/bs';
 import emailjs from '@emailjs/browser';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export const Contact = () => {
   const form = useRef();
-  const handleClick = (e) => {
-    alert('Message Sent!');
-  };
 
   const sendEmail = (e) => {
     e.preventDefault();
+    toast.success('Thanks for Contacting Promise Champion!');
+
     //  form.current.reset(e);
     // e.target.reset();
 
@@ -97,13 +98,10 @@ export const Contact = () => {
             placeholder="Leave a message"
             required
           ></textarea>
-          <button
-            type="submit"
-            className="btn btn-primary"
-            onClick={() => handleClick()}
-          >
+          <button type="submit" className="btn btn-primary">
             Send Message
           </button>
+          <ToastContainer />
         </form>
       </div>
     </section>

@@ -30,7 +30,7 @@ header {
 }
 
 .header__socials::after {
-  content: "";
+  content: '';
   width: 1px;
   height: 2rem;
   background: var(--color-primary);
@@ -38,7 +38,7 @@ header {
 
 /* ============ Me ============== */
 .me {
-  background: linear-gradient(var(--color-primary), transparent);
+  background: linear-gradient(#2c2c6c, transparent);
   width: 22rem;
   height: 34rem;
   position: absolute;
