@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './Contact.css';
 import { MdOutlineEmail } from 'react-icons/md';
 import { RiMessengerLine } from 'react-icons/ri';
@@ -8,10 +8,17 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 export const Contact = () => {
+  const [fullname, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setName('');
+    setEmail('');
+    setMessage('');
     toast.success('Thanks for Contacting Promise Champion!');
 
     //  form.current.reset(e);
@@ -83,17 +90,23 @@ export const Contact = () => {
           <input
             type="text"
             name="user_name"
+            onChange={(event) => setName(event.target.value)}
+            value={fullname}
             placeholder="Your Full Name"
             required
           />
           <input
             type="email"
             name="user_email"
+            onChange={(event) => setEmail(event.target.value)}
+            value={email}
             placeholder="Your Email"
             required
           />
           <textarea
             name="message"
+            onChange={(event) => setMessage(event.target.value)}
+            value={message}
             rows="7"
             placeholder="Leave a message"
             required
