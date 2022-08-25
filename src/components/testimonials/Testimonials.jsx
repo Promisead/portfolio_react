@@ -38,7 +38,7 @@ const data = [
     avatar: avt3,
     name: 'Isaac Wondaz',
     review:
-      'Working with The Champions Academy as a  tutor and UI UX Designer has been one of the most important decisions I have taken. The team has been wonderful and responsible. I am able to work conveniently especially when I get to meet with the most amazing set of children. This is the highlight of my work. Also I need to say The Champions  has the best tech trainers you can find.',
+      'Working with The Champions Academy as a  tutor and UI/UX Designer has been one of the most important decisions I have taken. The team has been wonderful and responsible. I am able to work conveniently especially when I get to meet with the most amazing set of kids. This is the highlight of my work. Also I need to say The Champions  has the best tech trainers you can find.',
   },
 ];
 
