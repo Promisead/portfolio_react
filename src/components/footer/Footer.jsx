@@ -43,7 +43,10 @@ const Footer = () => {
         <a href="https://twitter.com/promisedukeac" target="_blank">
           <AiFillTwitterSquare />
         </a>
-        <a href="https://github.com/Promisead" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/promise-duke-a0020656/"
+          target="_blank"
+        >
           <AiOutlineLinkedin />
         </a>
       </div>
