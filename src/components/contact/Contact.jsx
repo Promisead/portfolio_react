@@ -19,7 +19,7 @@ export const Contact = () => {
     setName('');
     setEmail('');
     setMessage('');
-    toast.success('Thanks for Contacting Promise Champion!');
+    toast.success('Thanks You for Connecting Promise Champion!');
 
     //  form.current.reset(e);
     // e.target.reset();
