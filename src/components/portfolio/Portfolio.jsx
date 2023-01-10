@@ -11,21 +11,21 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'Youtube Clone',
+    title: 'YOUTUBE CLONE',
     github: 'https://github.com/Promisead/youtube_clone2',
     demo: 'https://youtube-clone-promisead.vercel.app/',
   },
   {
     id: 2,
     image: IMG2,
-    title: 'Musical Ecommerce Website',
+    title: 'MUSICAL ECOMMERCE STORE',
     github: 'https://github.com/Promisead/cloudinary-ecommerce',
     demo: 'https://solidlinks.vercel.app/',
   },
   {
     id: 3,
     image: IMG3,
-    title: 'NFT Crypto Tracker',
+    title: 'NFT CRYTO TRACKER',
     github: 'https://github.com/Promisead/crypto_tracker',
     demo: 'https://crypto-tracker-phi-five.vercel.app/',
   },
@@ -46,9 +46,9 @@ const data = [
   {
     id: 6,
     image: IMG6,
-    title: 'INSTAGRAM FEATURES',
-    github: 'https://github.com/Promisead/chatapp_instagram_features',
-    demo: '#',
+    title: 'QUIZ HUB',
+    github: 'https://github.com/Promisead/simple-quiz-mui',
+    demo: 'https://simple-quiz-peach.vercel.app/',
   },
 ];
 
